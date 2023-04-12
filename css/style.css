@@ -5,4 +5,14 @@ body{
 }
 main{
     flex-grow: 1;
+    background: linear-gradient(#7A2488, #000);
+    color: #fff;
+}
+.li{
+    background: #BA5DC9;
+    border: none;
+}
+.input-color{
+    background: #BA5DC9;
+    border: none;
 }

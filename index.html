@@ -17,95 +17,68 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+      <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="./index.html"
+            >Lista de tareas</a
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-          </div>
         </div>
       </nav>
     </header>
     <main>
       <div class="">
         <section class="container">
-          <h1>Lista de tareas</h1>
-          <article class="row">
+          <h1 class="text-center">Lista de tareas</h1>
+          <article class="row justify-content-center">
             <aside class="col-md-5">
               <form action="">
-                <article
-                  class="d-flex flex-nowrap justify-content-center align-items-end"
-                >
-                  <aside class="mb-3">
-                    <label for="textInput" class="form-label fw-semibold fs-5"
-                      >Ingresa la tarea a realizar</label
-                    >
-                    <input type="text" class="form-control" id="textInput" />
-                  </aside>
-                  <aside class="mb-3 mx-3">
-                    <button type="submit" class="btn btn-success">
-                      Agregar tarea
+                <aside class="mb-3">
+                  <label
+                    for="textInput"
+                    class="form-label fw-semibold fs-5 mx-4"
+                    >Crear tarea</label
+                  >
+                  <div class="d-flex">
+                    <input
+                      type="text"
+                      class="form-control mx-2 input-color rounded-pill"
+                      id="textInput"
+                    />
+                    <button type="submit" class="btn btn-dark mx-2 rounded-pill">
+                      Agregar
                     </button>
-                  </aside>
-                </article>
+                  </div>
+                </aside>
               </form>
-            </aside>
-            <aside class="col-md-5 text-center">
-              <h5>Tareas pendientes</h5>
-              <ul class="list-unstyled text-center" id="tareasPendientes">
-              </ul>
-              <aside class="row">
-                <input type="text" id="delete" class="col-6">
-                <article class="col-6">
-                  <button type="btn" class="btn btn-outline-success" id="borrarTarea">Borrar tarea</button>
-                </article>
+              <aside>
+                <aside class="mb-3">
+                  <label
+                    for="textInput"
+                    class="form-label fw-semibold fs-5 mx-4"
+                    >Borrar tarea</label
+                  >
+                  <div class="d-flex">
+                    <input type="text" class="form-control mx-2 input-color rounded-pill" id="delete" />
+                    <button
+                      type="btn"
+                      class="btn btn-outline-danger mx-2 rounded-pill"
+                      id="borrarTarea"
+                    >
+                      Borrar
+                    </button>
+                  </div>
+                </aside>
               </aside>
+            </aside>
+            <aside class="col-md-5 text-center px-5">
+              <h5>Tareas pendientes</h5>
+              <ul class="list-unstyled text-center" id="tareasPendientes"></ul>
             </aside>
           </article>
         </section>
       </div>
     </main>
-    <footer class="bg-dark">
+    <footer class="bg-black">
       <section class="container text-center text-secondary">
         <p>&copy; Todos los derechos reservados</p>
       </section>
