@@ -34,7 +34,7 @@ function recorrerArray(){
     ${element}
     <i type="button" class="bi bi-check text-success fs-2"></i>
     `;
-    liTareas.className = `d-flex flex-row justify-content-center align-items-center li rounded-pill mt-2 ${i}`;
+    liTareas.className = `d-flex flex-row justify-content-center align-items-center li rounded-pill mt-2 mx-5 ${i}`;
     tareasPendientes.appendChild(liTareas);
   });
 }

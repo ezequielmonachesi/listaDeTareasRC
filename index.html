@@ -26,10 +26,10 @@
       </nav>
     </header>
     <main>
-      <div class="">
+      <div class="py-5">
         <section class="container">
           <h1 class="text-center">Lista de tareas</h1>
-          <article class="row justify-content-center">
+          <article class="row justify-content-center justify-content-md-between justify-content-lg-center mt-5">
             <aside class="col-md-5">
               <form action="">
                 <aside class="mb-3">
@@ -41,10 +41,10 @@
                   <div class="d-flex">
                     <input
                       type="text"
-                      class="form-control mx-2 input-color rounded-pill"
+                      class="mx-2 input-color rounded-pill"
                       id="textInput"
                     />
-                    <button type="submit" class="btn btn-dark mx-2 rounded-pill">
+                    <button type="submit" class="btn btn-dark mx-2 rounded-pill border border-ligth">
                       Agregar
                     </button>
                   </div>
@@ -58,10 +58,10 @@
                     >Borrar tarea</label
                   >
                   <div class="d-flex">
-                    <input type="text" class="form-control mx-2 input-color rounded-pill" id="delete" />
+                    <input type="text" class="mx-2 input-color rounded-pill" id="delete" />
                     <button
                       type="btn"
-                      class="btn btn-outline-danger mx-2 rounded-pill"
+                      class="btn btn-dark mx-2 rounded-pill border border-danger"
                       id="borrarTarea"
                     >
                       Borrar
@@ -70,8 +70,8 @@
                 </aside>
               </aside>
             </aside>
-            <aside class="col-md-5 text-center px-5">
-              <h5>Tareas pendientes</h5>
+            <aside class="col-md-5 text-center px-5 mt-4">
+              <h4>Tareas pendientes</h4>
               <ul class="list-unstyled text-center" id="tareasPendientes"></ul>
             </aside>
           </article>

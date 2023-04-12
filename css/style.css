@@ -14,5 +14,12 @@ main{
 }
 .input-color{
     background: #BA5DC9;
-    border: none;
+    border: #b23dc4;
+    outline: none;
+    padding: 0 30px;
+    color: white;
+}
+.input-color:focus{
+    border: 1px solid white;
+    box-shadow: 0 0 2px white;
 }
